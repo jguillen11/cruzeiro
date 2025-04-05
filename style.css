@@ -3,6 +3,7 @@ body{
     font-family: sans-serif;
     background-color: #E5EFFA;
     color: #e2e2e2;
+    z-index: 10;
 }
 
 .header{
@@ -14,6 +15,7 @@ body{
     border-bottom: 2px solid #ccc;
     position: fixed;
     top: 0;
+    z-index: 20;
 }
 
 .header-nav {
@@ -81,6 +83,11 @@ body{
     border-radius: 10px;
     background: #42c;
     box-shadow: 0 0 45px 0 #52cd;
+    transition: all 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 .card_img{
