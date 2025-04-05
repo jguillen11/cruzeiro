@@ -26,7 +26,7 @@ body{
     width: 80px;
     cursor: pointer;
     transition: all 0.3s;
-    margin: auto 20px;
+    margin: 0 20px;
 }
 
 .header-logo img:hover{
@@ -99,12 +99,17 @@ body{
         flex-direction: column;
     }
 
+    .header-logo {
+        width: 100%;
+        margin-left: 20px;
+    }
+
     .header-ul {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .contenedor-tarjetas {
-        margin: 250px auto 10px;
+        margin: 180px auto 10px;
         width: 70%;
         padding: 40px;
     }
