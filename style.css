@@ -108,6 +108,16 @@ body{
         flex-direction: row;
     }
 
+    .header-ul li {
+        margin: 0 5px;
+        padding: 5px;
+
+    }   
+
+    .header-ul a {
+        font-size: 1rem;
+    }
+
     .contenedor-tarjetas {
         margin: 180px auto 10px;
         width: 70%;
