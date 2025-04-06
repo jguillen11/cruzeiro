@@ -1,8 +1,15 @@
+:root {
+    --color-background: #E5EFFA;
+    --color-text: #fffd;
+    --color-primary: #42c;
+    --color-card-shadow: #52cd;
+}
+
 body{
     margin: 0;
     font-family: sans-serif;
-    background-color: #E5EFFA;
-    color: #e2e2e2;
+    background-color: var(--color-background);
+    color: var(--color-text);
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -14,7 +21,7 @@ body{
     padding: 15px;
     text-align: center;
     box-sizing: border-box;
-    background: #42c;
+    background: var(--color-primary);
     border-bottom: 2px solid #ccc;
     position: fixed;
     top: 0;
@@ -39,8 +46,7 @@ body{
 
 .header-ul{
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;  
     margin: 0;
     padding: 0;
 }
@@ -55,7 +61,7 @@ body{
 }
 
 .header-ul a{
-    color: #fff;
+    color: var(--color-text);
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -80,8 +86,8 @@ body{
     text-align: center;
     box-sizing: border-box;
     border-radius: 10px;
-    background: #42c;
-    box-shadow: 0 0 45px 0 #52cd;
+    background: var(--color-primary);
+    box-shadow: 0 0 45px 0 var(--color-card-shadow);
     transition: all 0.3s;
 }
 
@@ -98,10 +104,4 @@ body{
     text-align: justify;
     font-size: 1rem;
     display: block;
-}
-
-@media screen and (max-width: 500px) {
-    .header-nav {
-        flex-direction: column;
-    }  
 }
