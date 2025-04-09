@@ -8,9 +8,14 @@
 body{
     margin: 0;
     font-family: sans-serif;
-    background-color: var(--color-background);
+    background: url(/img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
     color: var(--color-text);
-    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
 }
 
 .header{
@@ -44,8 +49,7 @@ body{
 .header-ul{
     list-style: none;
     display: flex;  
-    margin: 10px;
-    padding: 0;
+    padding: 0 20px;
 }
 
 .header-ul li{
@@ -69,8 +73,8 @@ body{
 
 .contenedor-tarjetas{
     margin: auto;
-    margin-top: 10rem;
-    max-width: 750px;
+    margin-top: 11rem;
+    max-width: 1020px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -102,4 +106,14 @@ body{
     text-align: justify;
     font-size: 1rem;
     display: block;
+}
+
+footer {
+    background: var(--color-primary);
+    margin-top: auto;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    color: var(--color-text);
+    box-sizing: border-box;
 }
