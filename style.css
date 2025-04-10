@@ -2,19 +2,18 @@
     --color-background: #E5EFFA;
     --color-text: #fffd;
     --color-primary: #42c;
-    --color-card-shadow: #52cd;
+    --color-card-shadow: #fff9;
 }
 
 body{
     margin: 0;
     font-family: sans-serif;
-    background: url(/img/background.jpg) no-repeat center center fixed;
+    background: url(img/estrellas.jpg) no-repeat center center fixed;
     background-size: cover;
     color: var(--color-text);
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     justify-content: center;
 }
 
