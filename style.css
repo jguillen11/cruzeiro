@@ -2,7 +2,7 @@
     --color-background: #E5EFFA;
     --color-text: #fffd;
     --color-primary: #42c;
-    --color-card-shadow: #fff9;
+    --color-card-shadow: #ccca;
 }
 
 body{
@@ -61,7 +61,7 @@ body{
 }
 
 .header-ul a{
-    color: var(--color-text);
+    color: inherit;
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -73,6 +73,7 @@ body{
 .contenedor-tarjetas{
     margin: auto;
     margin-top: 11rem;
+    margin-bottom: 3rem;
     max-width: 1020px;
     display: flex;
     justify-content: center;
@@ -88,8 +89,11 @@ body{
     box-sizing: border-box;
     border-radius: 10px;
     background: var(--color-primary);
-    box-shadow: 0 0 45px 0 var(--color-card-shadow);
+    box-shadow: 0 0 25px 0 var(--color-card-shadow);
     transition: all 0.3s;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover -10% contain 40%;
 }
 
 .card:hover{
@@ -115,4 +119,14 @@ footer {
     width: 100%;
     color: var(--color-text);
     box-sizing: border-box;
+    box-shadow: 0 -4px 6px -4px #0007;
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
