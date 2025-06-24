@@ -49,6 +49,7 @@ body {
 .header-ul {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
 .header-ul li {
@@ -142,5 +143,9 @@ footer {
 
     .card {
         width: 100%;
+    }
+
+    .header-ul a {
+        font-size: .9rem;
     }
 }
